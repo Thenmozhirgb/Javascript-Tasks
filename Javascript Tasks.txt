@@ -1,0 +1,792 @@
+Tasks 
+
+1.Arithmetic operators.
+
+(i)Addition (+) Operator 
+
+Number 
+
+Var a = 45;
+Var b = 67;
+Var add = a+b;
+console.log("Addtion " +a+ " of " +b+ " is: " +add);
+
+(or)
+
+var add = 99+56;
+console.log("addtion is :" +add);
+
+String
+
+var nameone = "Thenmozhi"; 
+var nametwo = "Murugan"; 
+var addedname = nameone+nametwo; 
+console.log("added name is " +addedname);
+
+(or)
+
+var name= "Thenmozhi" +" " + "Murugan";
+console.log("added name is " +name);
+
+(ii)Subtraction (-) operator 
+
+var a = 11; var b= 11; 
+var sub = a-b; 
+console.log("the subtraction " +a+ " of" +b+ " is: " +sub);
+
+(or)
+
+var sub = 65-89;
+console.log("the subtraction is " +sub);
+
+(iii)Multiplication (*) operator
+
+var a = 45;
+var b = 78;
+var multi = a*b;
+console.log("The multiplication of the value is" +multi);
+
+(or)
+
+var multi = 67*44;
+console.log("The multiplication of the value is" +multi);
+
+(iv)Division (/) operator
+
+
+var a = 45;
+var b = 78;
+var divi = a/b;
+console.log("The division of the value is" +divi);
+
+(or)
+
+var divi = 55/5;
+console.log("The division of the value is" +divi);
+
+(v)Module (%) operator
+
+
+var a = 54;
+var b = 5;
+var modu = a%b;
+console.log("The module of the value is" +modu);
+
+(or)
+
+var modu = 67%4;
+console.log("The module of the value is" +modu);
+
+
+(vi)Increment (++) operator
+
+
+var a = 45;
+a++;
+var b = a;
+console.log("The increment of the value is" +b);
+
+
+(vii)Decrement (--) operator
+
+
+var a = 45;
+a--;
+var b = a;
+console.log("The decrement of the value is" +b);
+
+2.Logical Operators.
+
+(i)AND (&&) operator
+
+let hour = 12;
+let minute = 30;
+
+if (hour == 12 && minute == 30) {
+  alert( 'The time is 12:30' );
+}
+
+(ii)OR (||) operator
+
+let hour = 45;
+let minute = 30;
+
+if (hour == 34 || minute == 30) {
+  alert( 'The time is 12:30' );
+
+(iii)NOT (!) operator
+
+<script>
+var x = 6;
+var y = 3;
+
+document.getElementById("demo").innerHTML = 
+!(x === y) + "<br>" + 
+!(x > y);
+</script>
+
+3.Assignment Operators
+
+(i) = operator
+
+var a = 10;
+console.log("a equal to be" +a);
+
+(ii) += operator
+
+var a = 89;
+a += 6;
+console.log("the += operator value is " +a);
+
+(iii) -= operator
+
+
+var a = 56;
+a -= 8;
+console.log("the -= operator value is " +a);
+
+(iv) *= operator
+
+
+var a = 67;
+a *= 4;
+console.log("the *= operator value is " +a);
+
+(v) /= operator
+
+
+var a = 90;
+a /= 9;
+console.log("the /= operator value is " +a);
+
+(vi) %= operator
+
+
+var a = 67;
+a %= 6;
+console.log("the %= operator value is " +a);
+
+
+(vii) <<= operator
+
+
+var a = 89;
+a <<= 6;
+console.log("the <<= operator value is " +a);
+
+(viii) >>= operator
+
+
+var a = 89;
+a >>= 6;
+console.log("the >>= operator value is " +a);
+
+(ix) >>>= operator
+
+
+var a = 89;
+a >>>= 6;
+console.log("the >>>= operator value is " +a);
+
+(x) &= operator
+
+(xi) |= operator
+
+(xii) ^= operator
+
+(xiii) **= operator
+
+
+4.What is == and ===?
+
+The == operator is an equality operator. It checks whether its two operands are the same or not by changing expression from one data type to others. 
+You can use == operator in order to compare the identity of two operands even though, they are not of a similar type.
+
+Example
+
+console.log(1 == 1);
+
+console.log('hello' == 'hello');
+
+
+
+console.log('1' ==  1);
+
+console.log(0 == false);
+ 
+
+
+=== (Triple equals) is a strict equality comparison operator in JavaScript, 
+which returns false for the values which are not of a similar type. This operator performs type casting for equality. 
+If we compare 2 with "2" using ===, then it will return a false value.
+
+Example
+
+console.log(1 === 1);
+
+
+
+console.log('hello' === 'hello');
+
+
+
+console.log('1' ===  1);
+
+console.log(0 === false);
+
+
+
+5.Declaring an array
+
+
+declaration of an array
+
+Method one - var variable-name = [];
+
+Example 
+
+var name = ["Thenmozhi", "Suresh", "Arun", "Sundar"];
+console.log("array values " +name);
+
+Method two - var variable-name = new array();
+
+Example 
+
+var name = new Array("Thenmozhi", "Suresh", "Arun", "Sundar");
+console.log("array values " +name);
+
+Tasks 
+
+
+6.How will you push data into an array?
+
+The push() method adds new items to the end of an array, and returns the new length.
+
+Note: The new item(s) will be added at the end of the array.
+
+Note: This method changes the length of the array.
+
+syntax 
+
+array.push(item1,item2,....,itemn)
+
+Example 
+
+var fruits = ["Apple", "Orange", "Grapes", "Kiwi"];
+fruits.push("Banana", "mango");
+console.log("The push array display in the screen" +fruits);
+
+7.How will you iterate an array?
+
+Array iteration methods operate on every array item.
+
+1.Array.forEach()
+
+The forEach() method calls a function (a callback function) once for each array element.
+
+Example
+
+var txt = ""; 
+var numbers = [45, 4, 9, 16, 25];
+
+numbers.forEach(myFunction); 
+function myFunction(value) {
+  
+txt = txt + value; 
+}
+console.log("the for each array" +txt);
+
+2.Array.map()
+
+The map() method creates a new array by performing a function on each array element.
+
+The map() method does not execute the function for array elements without values.
+
+The map() method does not change the original array.
+
+Example
+
+var numbers1 = [45, 4, 9, 16, 25];
+var numbers2 = numbers1.map(myFunction);
+function myFunction(value) {
+  return value * 2;
+}
+console.log("The map array  " +numbers2);
+
+3.Array.filter()
+
+The filter() method creates a new array with array elements that passes a test.
+
+Example
+
+
+var numbers1 = [45, 4, 9, 16, 25];
+var numbers2 = numbers1.filter(myFunction);
+function myFunction(value) {
+  return value > 20;
+}
+console.log("The filter array  " +numbers2);
+
+4.Array.reduce()
+
+The reduce() method runs a function on each array element to produce (reduce it to) a single value.
+
+The reduce() method works from left-to-right in the array. See also reduceRight().
+
+The reduce() method does not reduce the original array.
+
+Example
+
+var numbers1 = [45, 4, 9, 16, 25];
+var sum = numbers1.reduce(myFunction);
+function myFunction(total,value) {
+  return total+value ;
+}
+console.log("The sum of the array  " +sum);
+
+5.Array.reduceRight()
+
+The reduceRight() method runs a function on each array element to produce (reduce it to) a single value.
+
+The reduceRight() works from right-to-left in the array. See also reduce().
+
+The reduceRight() method does not reduce the original array.
+
+Example
+
+var numbers1 = [4, 4, 9, 1, 25];
+var sum = numbers1.reduceRight(myFunction);
+function myFunction(total,value) {
+  return total+value ;
+}
+console.log("The sum of the array  " +sum);
+
+6.Array.every()
+
+The every() method check if all array values pass a test.
+
+Example
+
+var numbers1 = [4, 4, 9, 1, 25];
+var numbers2 = numbers1.every(myFunction);
+function myFunction(value) {
+  return value > 20 ;
+}
+console.log("The numbers every array is  " +numbers2);
+
+7.Array.some()
+
+The some() method check if some array values pass a test.
+
+Example
+
+var numbers1 = [4, 4, 9, 1, 25];
+var numbers2 = numbers1.some(myFunction);
+function myFunction(value) {
+  return value > 20 ;
+}
+console.log("The some number of array is  " +numbers2);
+
+8.Array.indexOf()
+
+The indexOf() method searches an array for an element value and returns its position.
+
+Note: The first item has position 0, the second item has position 1, and so on.
+
+Example
+
+var fruits = ["Apple", "Orange", "Apple", "Mango"];
+var a = fruits.indexOf("Apple");
+console.log("Apple is found in position " + a);
+
+9.Array.lastIndexOf()
+
+Array.lastIndexOf() is the same as Array.indexOf(), but returns the position of the last occurrence of the specified element.
+
+Example
+
+var fruits = ["Apple", "Orange", "Apple", "Mango"];
+var a = fruits.lastindexOf("Apple");
+console.log("Apple is found in position " + a);
+
+10.Array.find()
+
+The find() method returns the value of the first array element that passes a test function.
+
+Example
+
+var numbers = [4, 9, 16, 25, 29];
+var first = numbers.find(myFunction);
+
+console.log("First number over 18 is " + first);
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
+
+
+11.Array.findIndex()
+
+The findIndex() method returns the index of the first array element that passes a test function.
+
+Example
+
+var numbers = [4, 9, 16, 25, 29];
+var first = numbers.findIndex(myFunction);
+
+console.log("First number over 18 is index " + first);
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
+
+8.How will you delete an element from an array?
+
+1.Array.splice()
+
+The splice() method adds/removes items to/from an array, and returns the removed item(s).
+
+Note: This method changes the original array.
+
+syntax
+
+array.splice(index, howmany, item1, ....., itemX)
+
+Example 
+
+let array = ["a", "b", "c"];
+let index = 1;
+array.splice(index, 1);
+array;
+
+2.Array.shift()
+
+The shift() method removes the first item of an array.
+
+Note: This method changes the length of the array.
+
+Note: The return value of the shift method is the removed item.
+
+Note: this method will change the original array.
+
+syntax  :  array.shift()
+
+Example
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.shift(myFunction);
+console.log("The fruits are " +fruits);
+
+function myFunction() {
+  fruits.shift();
+  console.log("the first fruits remove in the array " +fruits);
+}
+
+3.Array.pop()
+
+The pop() method removes the last element of an array, and returns that element.
+
+Note: This method changes the length of an array.
+
+syntax : array.pop()
+
+Example
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.pop(myFunction);
+console.log("The fruits are " +fruits);
+
+function myFunction() {
+  fruits.shift();
+  console.log("the first fruits remove in the array " +fruits);
+}
+
+
+9.Array contains 10 elements and How will you delete the first 3 elements?
+
+array.splice() method is used for delete the element.
+
+var fruits = ["banana", "organge", "apple", "mango", "fig", "kiwi", "pineapple", "greenapple", "grapes", "cherry"];
+fruits.splice(0, 3);
+console.log("the removed items " +fruits);
+
+10.How will you push an element into the first index?
+
+Array.unshift() method is used for push an element into the first index.
+
+var number = [1, 2, 3, 4, 5, 6];
+number.unshift(0);
+console.log("the push the element "  +number);
+
+11.How will you clone an array? - copy
+
+var array_Clone = function(arra1) {
+ return arra1.slice(0);
+    };
+console.log(array_Clone([1, 2, 4, 0]));
+console.log(array_Clone([1, 2, [4, 0]]));
+
+12.How will you find a index of an specific element?
+
+Array.indexOf() method is used for find a index of an specific element.
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+var a = fruits.indexOf("Apple");
+console.log("the specific element index of is " +a);
+
+13.How will you reverse a string?
+
+function reverseString(str) {
+
+    let newString = "";
+    for (let i = str.length - 1; i >= 0; i--) {
+        newString += str[i];
+    }
+    return newString;
+}
+
+const string = prompt('Enter a string: ');
+
+const result = reverseString(string);
+console.log(result);
+
+(or) using bulit in function javascript split(), reverse(), join()
+
+function reverseString(str) {
+
+   
+    const arrayStrings = str.split("");
+   
+    const reverseArray = arrayStrings.reverse();
+ 
+    const joinArray = reverseArray.join("");
+    
+    return joinArray;
+}
+
+const string = prompt('Enter a string: ');
+
+const result = reverseString(string);
+console.log(result);
+
+14.How will you concatenate a string?
+
+The concat() method is used to join two or more strings.
+
+This method does not change the existing strings, but returns a new string containing the text of the joined strings.
+
+syntax : string.concat(string1, string2, ..., stringX)
+
+Example 
+
+var str = "Hello ";
+
+var str1 = "world!";
+
+var str2 = " Have a nice day!";
+
+console.log(str.concat(str1,str2));
+
+
+15.How will you sort a list or array? 
+
+The sort() method sorts the items of an array.
+
+The sort order can be either alphabetic or numeric, and either ascending (up) or descending (down).
+
+By default, the sort() method sorts the values as strings in alphabetical and ascending order.
+
+Syntax : array.sort(compareFunction)
+
+Example ascending order an array
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.sort();
+console.log("The sorting array is " +fruits);
+
+Example descending order an array
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.reverse();
+console.log("The sorting array is " +fruits)
+
+Example number in ascending order
+
+var number = [23, 56, 67, 12, 2];
+number.sort(function(a, b){return a-b}); 
+console.log("The ascending order of number is " +number);
+
+Example number in descending order
+
+var number = [23, 56, 67, 12, 2];
+number.sort(function(a, b){return b-a}); 
+console.log("The descending order of number is " +number);
+
+
+16.Bubble sort programming in javascript. - copy
+
+
+ function bblSort(arr){ 
+     
+ for(var i = 0; i < arr.length; i++){ 
+       
+   for(var j = 0; j < ( arr.length - i -1 ); j++){ 
+       
+     if(arr[j] > arr[j+1]){ 
+         
+       var temp = arr[j] 
+       arr[j] = arr[j + 1] 
+       arr[j+1] = temp 
+     } 
+   } 
+ } 
+
+ console.log(arr); 
+} 
+  
+var arr = [234, 43, 55, 63,  5, 6, 235, 547]; 
+bblSort(arr);
+
+17.Binary search program in javascript.
+
+let arr = [1,4,5,7,8,9,11,13,14,17];
+
+
+let binarySearch = (arr, l, r, s) => {
+
+let mid = l+Math.floor((l+r)/2);
+
+
+if(l<= r){
+
+if(s == arr[mid]){
+return mid;
+}
+
+if (s <= arr[mid]){
+sss
+return binarySearch(arr, l, mid-1, s);
+
+}
+
+if (s >= arr[mid]){
+
+return binarySearch(arr, mid+1, r, s);
+}
+}
+return -1;
+
+}
+
+console.log(binarySearch(arr, 0, arr.length-1, 7));
+
+18.Two dimensional array  var a[2][2] = [[4,3][5,2]] output is [9,5]. - copy
+
+function Arrays_sum(array1, array2) 
+{
+  
+const result = [];
+  
+let ctr = 0;
+  
+let x=0;
+
+  
+while (ctr < array1.length && ctr < array2.length) 
+  
+{
+    
+result.push(array1[ctr] + array2[ctr]);
+    
+ctr++;
+  
+}
+
+ 
+if (ctr === array1.length) 
+ {
+    
+for (x = ctr; x < array2.length; x++)   
+{
+      
+result.push(array2[x]);
+    
+}
+  
+} 
+  
+else
+  
+{
+  
+for (x = ctr; x < array1.length; x++) 
+    
+{
+      
+result.push(array1[x]);
+    
+}
+  
+}
+  
+return result;
+
+}
+
+
+console.log(Arrays_sum([4,3], [5,2]));
+
+
+19.Print star into console right side triangle shape.
+
+var i;
+for(var i=1; i<=4; i++){
+   console.log("*".repeat(i));
+}
+
+20.If the input is 4 star it should be pyramid shape. - copy
+
+var a = '';
+
+var n = 7;
+var m = (n-1); 
+
+for(i=1; i <= n; i++)
+
+{
+    
+a = a.trim();
+    
+a = ' '.repeat(m) + a + (i > 1 ? ' ' : '') + '*';
+ 
+console.log(a);
+   
+m--;
+
+}
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
